@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.1rem;
+  background-color: #9c27b0;
+}
+
+h1{
+  font-family: 'Allura', cursive;
+}
+
+p {
+  font-family: 'Arvo', serif
+}
+
+
+
+.header_background {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/index_header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header-box {
+  text-align: center;
+  color: black;
+  position: absolute;
+  display: block;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__main-text {
+  font-family: 'Allura', cursive;
+  text-shadow: #9c27b0 1px 1px 3px;
+  animation: fadeInDown 1s 1 0s ease-in;
+  backface-visibility: hidden;
+  position: relative;
+  
+} 
+
+.header__second-text {
+  font-family: 'Arvo', serif;
+  font-size: 1.1rem;
+  animation: fadeInUp 1s 1 0s ease-in;
+  backface-visibility: hidden;
+  position: relative;
+}
+
+/* header animations keyframes */
+
+@keyframes fadeInDown{
+  0%{
+      transform: translateY(-100%);
+      opacity: 0;
+      }
+  100%{
+      transform: rotate(xx);
+      opacity: 1;
+      }
+}
+
+@keyframes fadeInUp{
+  0%{
+      transform: translateY(100%);
+      opacity: 0;
+      }
+  100%{
+      transform: rotate(xx);
+      opacity: 1;
+      }
+}
+
+div.fa-icon a {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: -75px;
+  color: #9c27b0;
+  display:inline-block;
+  position: absolute;
+  animation: icon-animation 1s infinite 1s linear;
+  transition: all 1s ease-in-out;
+}
+
+.fa-icon a:hover {
+  color: #8b0086;;
+}
+
+@keyframes icon-animation{
+  0%{
+      }
+  50%{
+      transform: translateY(15px);
+      }
+  100%{
+      transform: rotate(xx) translateY(0);
+      }
+}
+
+.div.fa.icon {
+  font-size: 10px;
+  animation: icon-animation 1s infinite 1s linear;
+}
+
+section {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+.welcome-header {
+  background-color: #f7f5b8;
+  
+}
+
+.weddings {
+  background-color: #f0efc6;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+.portraits {
+  background-color: #f7f5b8;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  margin-top: -40px;
+}
+
+.birthdays {
+  background-color: #f0efc6;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  margin-top: -40px;
+}
+
+.pregnancy {
+  background-color: #f7f5b8;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  margin-top: -40px;
+}
+
+.aerial {
+  background-color: #f0efc6;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -40px;
+}
+
+.pricing {
+  background-color: #f7f5b8;
+
+}
+
+.contact {
+  background-color: #f0efc6;
+}
+
+.carousel {
+  display: inline-block;
+}
+
+.formadecontacto {
+  padding-top: 50px;
+}
+
+.btn-padding {
+  padding-bottom: 25px;
+}

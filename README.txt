@@ -1,0 +1,1 @@
+This is my personal photography website to showcase and contact customers in regards to photography.
